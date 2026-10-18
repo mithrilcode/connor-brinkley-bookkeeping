@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Connor Brinkley Bookkeeping & Tax — Stylesheet
+   Connor Brinkley Bookkeeping — Stylesheet
    Mobile-first: base styles target phones, media queries scale up.
    ========================================================================== */
 
@@ -155,6 +155,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 .btn-accent { background: var(--gold-500); color: var(--navy-900); }
 .btn-accent:hover { background: var(--gold-600); box-shadow: 0 8px 20px rgba(217, 164, 65, 0.35); }
+
+.btn-outline { border-color: var(--green-600); color: var(--green-600); }
+.btn-outline:hover { background: var(--green-600); color: #fff; }
+
+.btn-group { display: flex; flex-wrap: wrap; gap: 0.75rem; }
 
 .btn-outline-light { border-color: rgba(255, 255, 255, 0.7); color: #fff; }
 .btn-outline-light:hover { background: #fff; color: var(--navy-900); }
@@ -346,6 +351,23 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   box-shadow: var(--shadow-lg);
 }
 .split-content p { color: var(--muted); }
+
+/* Portrait headshot: taller crop, face kept in frame */
+.split-media img.headshot {
+  aspect-ratio: 4 / 5;
+  object-position: center top;
+  max-width: 440px;
+  margin-inline: auto;
+}
+
+/* Certification badges */
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+.badge-row img { width: 112px; height: auto; }
 
 .check-list { margin: 1.5rem 0 2rem; display: grid; gap: 0.75rem; }
 .check-list li {

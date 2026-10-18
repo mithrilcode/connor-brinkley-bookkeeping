@@ -1,6 +1,7 @@
-# Connor Brinkley Bookkeeping & Tax
+# Connor Brinkley Bookkeeping
 
-The official website for Connor Brinkley's bookkeeping and tax preparation services.
+The official website for Connor Brinkley's bookkeeping services in San Antonio, TX, with a
+specialty in bars, restaurants and hospitality businesses.
 
 A fast, professional, fully responsive static website built with plain HTML, CSS and
 JavaScript — no build step and no frameworks, so it can be hosted anywhere (GitHub Pages,
@@ -33,17 +34,14 @@ Every push to `main` automatically redeploys the site within a minute or two.
 
 ## Customizing before launch
 
-Search the project for these placeholders and replace them with real details:
+Contact details (email and San Antonio location) are already filled in. One placeholder remains:
 
 | Placeholder | Where | Replace with |
 | --- | --- | --- |
-| `(555) 555-0123` / `tel:+15555550123` | `index.html` (contact section + footer) | Your business phone |
-| `hello@example.com` | `index.html` and `js/main.js` (`FALLBACK_EMAIL`) | Your business email |
-| `Your City, State` | `index.html` (contact section) | Your city/service area |
 | `YOUR_FORM_ID` | `index.html` (contact form `action`) | Your Formspree form ID |
 
-Also review the copy for claims you want to keep — e.g. "encrypted client portal", "answered
-within one business day", and the list of supported software.
+Also confirm the claims in the copy match how you work, e.g. "Mon-Fri, 9 AM - 5 PM",
+"answered within one business day", and flat-rate pricing.
 
 ### Setting up the contact form (free)
 

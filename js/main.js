@@ -1,4 +1,4 @@
-/* Connor Brinkley Bookkeeping & Tax — site interactions */
+/* Connor Brinkley Bookkeeping — site interactions */
 (function () {
   "use strict";
 
@@ -100,7 +100,7 @@
 
   var statusEl = form.querySelector(".form-status");
   var submitBtn = form.querySelector('button[type="submit"]');
-  var FALLBACK_EMAIL = "hello@example.com"; // TODO: replace with your real email
+  var FALLBACK_EMAIL = "connor.f.brinkley@gmail.com";
 
   var messages = {
     name: "Please enter your name.",
