@@ -1,12 +1,89 @@
-# OS files
-.DS_Store
-Thumbs.db
-desktop.ini
+# ==========================================================================
+# This repository is PUBLIC and is published as a website.
+# Anything committed here can be seen by anyone, forever (even if deleted
+# later, it stays in the git history). When in doubt, leave it out.
+# ==========================================================================
 
-# Editor folders
+# ---------- Personal documents (resume, certificates, tax/financial files) ----------
+# The website only uses images; PDFs and office documents should never be committed.
+# If you ever want to offer a public PDF download, add it deliberately with:
+#   git add -f path/to/file.pdf
+*.pdf
+*.doc
+*.docx
+*.odt
+*.rtf
+*.xls
+*.xlsx
+*.xlsm
+*.csv
+*.ods
+*.qbo
+*.qbw
+*.qbb
+*.ofx
+*.qfx
+*resume*
+*Resume*
+*RESUME*
+
+# ---------- Original / unedited photos ----------
+# Only web-optimized images (EXIF metadata stripped) belong in images/.
+# Keep camera originals in a folder named like these, which are never committed.
+originals/
+raw/
+private/
+*.heic
+*.HEIC
+*.raw
+*.cr2
+*.CR2
+*.nef
+*.dng
+*.psd
+*.xcf
+
+# ---------- Secrets and credentials ----------
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+secrets*
+credentials*
+
+# ---------- Local previews, scratch and backup files ----------
+_p_*.html
+_preview*.html
+_harness*.html
+_hd.html
+_hm.html
+*.bak
+*.orig
+*.swp
+*.swo
+*~
+*.bundle
+*.zip
+
+# ---------- Dependencies / build output (if tooling is ever added) ----------
+node_modules/
+dist/
+.cache/
+
+# ---------- OS files ----------
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ---------- Editor folders ----------
 .vscode/
 .idea/
 
-# Logs and temp files
+# ---------- Logs and temp files ----------
 *.log
 *.tmp
