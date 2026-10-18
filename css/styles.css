@@ -250,7 +250,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   color: var(--ink);
   font-weight: 500;
 }
-.primary-nav a:not(.btn):hover { color: var(--green-600); text-decoration: none; }
+.primary-nav a:not(.btn):hover,
+.primary-nav a[aria-current="page"] { color: var(--green-600); text-decoration: none; }
 .primary-nav .btn { margin-top: 1rem; width: 100%; }
 
 /* ---------- Hero ---------- */
@@ -557,6 +558,90 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .footer-bottom p { margin: 0; }
 
+/* ---------- About page ---------- */
+.page-hero {
+  padding-block: 3.5rem;
+  background: linear-gradient(135deg, var(--navy-900), var(--navy-700));
+  color: #fff;
+}
+.page-hero-grid { display: grid; gap: 2.5rem; align-items: center; }
+.page-hero h1 { color: #fff; }
+.page-hero .eyebrow { color: var(--gold-500); }
+.page-hero .lead { max-width: 580px; font-size: 1.125rem; color: rgba(255, 255, 255, 0.86); margin-bottom: 1.75rem; }
+.page-hero-photo img {
+  width: 100%;
+  max-width: 340px;
+  margin-inline: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: var(--radius);
+  border: 4px solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow-lg);
+}
+
+.timeline { position: relative; display: grid; gap: 1.75rem; padding-left: 2rem; }
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 7px; top: 0.5rem; bottom: 0.5rem;
+  width: 2px;
+  background: var(--line);
+}
+.timeline-item {
+  position: relative;
+  padding: 1.5rem 1.5rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: calc(-2rem + 1px); top: 1.75rem;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--green-600);
+  box-shadow: 0 0 0 4px var(--surface-alt);
+}
+.timeline-date {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  background: var(--green-50);
+  color: var(--green-600);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.timeline-item h3 { margin-bottom: 0.2rem; }
+.timeline-org { color: var(--muted); font-size: 0.95rem; }
+.timeline-item > p:last-child { margin-bottom: 0; color: var(--muted); }
+.timeline-item .check-list { margin: 1rem 0 0.5rem; }
+.timeline-item .check-list li { font-weight: 400; }
+
+.credential-grid {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin-inline: auto;
+}
+.credential-card {
+  padding: 2rem 1.75rem;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+.credential-card img { width: 160px; margin: 0 auto 1.25rem; }
+.credential-meta { color: var(--green-600); font-weight: 600; font-size: 0.9rem; }
+.credential-card p:last-child { margin: 0; color: var(--muted); }
+
+.cta-simple .cta-content { max-width: 720px; text-align: center; }
+
 /* ---------- Scroll reveal (enabled by JS) ---------- */
 .js .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .js .reveal.visible { opacity: 1; transform: none; }
@@ -580,6 +665,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .feature-grid { grid-template-columns: repeat(2, 1fr); }
   .feature-grid .feature-card:last-child { grid-column: 1 / -1; }
   .steps { grid-template-columns: repeat(3, 1fr); }
+  .credential-grid { grid-template-columns: 1fr 1fr; }
+  .values-list { grid-template-columns: repeat(2, 1fr); }
+  .page-hero { padding-block: 4.5rem; }
+  .page-hero-grid { grid-template-columns: 1.4fr 1fr; gap: 3.5rem; }
 }
 
 /* Desktop (≥ 1024px) */
@@ -616,6 +705,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .feature-grid { grid-template-columns: repeat(3, 1fr); }
   .feature-grid .feature-card:last-child { grid-column: auto; }
   .service-list { grid-template-columns: repeat(3, 1fr); }
+  .values-list { grid-template-columns: repeat(2, 1fr); max-width: 900px; margin-inline: auto; }
 
   .split { grid-template-columns: 1fr 1fr; gap: 4.5rem; }
   .cta-inner { grid-template-columns: 1fr 1.1fr; gap: 4rem; }

@@ -76,7 +76,7 @@
 
   /* ---------- Reveal-on-scroll animations ---------- */
   var revealTargets = document.querySelectorAll(
-    ".section-head, .feature-card, .service-item, .split-media, .split-content, .step, .cta-media, .cta-content, .faq-list details, .contact-info, .contact-form"
+    ".section-head, .feature-card, .service-item, .split-media, .split-content, .step, .cta-media, .cta-content, .faq-list details, .contact-info, .contact-form, .timeline-item, .credential-card"
   );
   if ("IntersectionObserver" in window) {
     var revealObserver = new IntersectionObserver(function (entries, obs) {
