@@ -13,6 +13,7 @@ Netlify, or any web host).
 .
 ├── index.html        # Homepage (services, process, FAQ, contact)
 ├── about.html        # About Connor: story, experience, credentials
+├── pricing.html      # Services & Pricing: packages, add-ons, FAQ
 ├── css/styles.css    # All styling, including responsive breakpoints
 ├── js/main.js        # Mobile menu, scroll effects, contact form validation
 └── images/           # Free stock photography (see images/CREDITS.md)
